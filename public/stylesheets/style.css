@@ -1,0 +1,46 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color:#ffffff;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#chat-type-area{
+	width:400px;
+}
+
+#chat-area{
+	height:200px;
+	background-color:#fbfbfb;
+	margin:2px;
+	border:solid;
+	border-width:1px;
+	border-color:#bbbbbb;
+	overflow-y: auto;
+}
+
+#text-message-person{
+	width:auto;
+	background-color:#F0FFFF;
+	margin:0px;
+	padding:5px;
+}
+
+#text-message-you{
+	width:auto;
+	background-color:#E6E6FA;
+	margin:0px;
+	padding:5px;
+}
+
+#div-chat{
+	display:none;
+}
+
+#div-identification{
+	max-width:400px;
+	margin:auto;
+}

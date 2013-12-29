@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="http://connect.facebook.net/en_US/all.js"></script>
+    <title>UTalker</title>
+
+</head>
+<body>
+    <div id="fb-root"></div>
+    <script>
+        FB.init({appTd:'1442794802600977', status: false, cookie: true, xfbml: true});
+        FB.getLoginStatus(function(response)
+        {
+            if(response.session){
+                FB.api('/me',function(response){
+                    document.getElementById('fb-root').innerHTML = response.name;
+                });
+            }else{
+                document.getElementById('fb-root').innerHTML = 'no one is logged in';
+            }
+        });
+    </script>
+</body>
+</html>

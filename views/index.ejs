@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bruno</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+	
+	<link rel="stylesheet" href="/themes/candy-theme-blue.min.css" />
+	<link rel="stylesheet" href="/themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.0/jquery.mobile.structure-1.4.0.min.css" />
+	
+	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js"></script>
+	
+	<script src="/javascripts/jquery-1.10.2.min.js"></script>
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="/javascripts/candy.js"></script>
+  </head>
+  <body>
+	  
+	<div data-role="page" data-theme="a">
+		<div data-role="header" data-position="inline">
+			<h1>Chat</h1>
+		</div>
+		<div data-role="content" data-theme="a">
+			<p></p>	
+			
+			<div id="div-identification">
+				<form id="form-identification">
+					<input id="user-name" type="text" placeholder="your name">
+					<input type="submit" value="Enter">
+				</form>
+			</div>
+			
+			<div id="div-chat">	
+				<div id="chat-area">
+				</div>
+	
+				<form id="chat-inserts" class="ui-grid-b my-breakpoint">
+					<input id="chat-type-area" tepy="text" placeholder="type your message here">
+					<input type="submit" value="send">
+				</form>
+			</div>
+			
+		</div>
+	</div>
+	
+	
+  </body>
+</html>
